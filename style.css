@@ -1,1 +1,55 @@
+:root {
+  --bg: #0a0a0f;
+  --card: #1a1a28;
+  --accent: #e8ff47;
+  --text: #f0f0f8;
+  --muted: #6b6b8a;
+}
 
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Bebas Neue';
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-schedule {
+  background: var(--accent);
+  border: none;
+}
+
+.btn-test {
+  background: transparent;
+  border: 1px solid var(--muted);
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
